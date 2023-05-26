@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% comment %} {% for message in messages %}
+    <div class="alert alert-{{ messages.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong>{{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endfor %} {% endcomment %}
+
+    {% block content %}
+    <div class="rwu">
+        <div class="pr">
+            <h1>SignUp</h1>
+            <div>
+                <form action="/su/" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="name" id="name" placeholder="Enter your Name"><br><br><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your Mail"><br><br><br>
+                    <input type="text" name="password" id="password" placeholder="Enter the Password"><br><br><br>
+                    <input type="number" name="number" id="number" placeholder="Enter your Number"><br><br><br>
+                    <button type="submit" id="re">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

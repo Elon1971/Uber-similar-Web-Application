@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="sub">
+        <h1 id="sub">Uber</h1>
+        <div class="btn">
+            <a href="/si"><button id="li">LogIn</button></a>
+            <a href="/su"><button id="ssu">SignUp</button></a>
+        </div>
+    </div>
+    <div class="ho">
+        <ul class="houl">
+            <li><div id="hodiv"><a href="/ho"><button id="bur"><h3>Ride</h3></button></a></div></li>
+            <li><div id="hodiv"><a href="/dr"><button id="bud"><h3><pre>Drive or
+deliver</pre> </h3></button></a></div></li>
+            <li><div id="hodiv"><a href="/re"><button id="bury"><h3><pre>Rent your
+fleet</pre></h3></button></a></div></li>
+        </ul>
+        <hr>
+    </div>
+    {% block content %}{% endblock %}
+    <div><br><br>
+        <div id="hoop1">Ride with Uber</div><br><br>
+
+        <div><a href="">
+            <ul class="hoop2">
+                <li><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914471/assets/89/8e4239-5e7d-4de7-bf71-00cc32d468db/original/Auto-150X150p4x.png"
+                    alt="auto"></li>
+                <li><div id="ubera">Uber Auto</div><div><p>Get affordable Uber Auto rides with no haggling</p></div></li>
+            </ul>
+        </a>
+        </div><br><br>
+
+        <div><a href="">
+            <ul class="hoop3">
+                <li><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914539/assets/86/82f8b3-e2e6-45f8-a8f7-fdc511f709e0/original/Moto-150X150p4x.png"
+                    alt="moto"></li>
+                <li><div id="ubera">Uber Moto</div><div><p>Get affordable Bike rides at your doorstep</p></div></li>
+            </ul>
+        </a>
+        </div><br><br>
+
+        <div><a href="">
+            <ul class="hoop4">
+                <li><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1630531077/assets/38/494083-cc23-4cf7-801c-0deed7d9ca55/original/uber-hourly.png"
+                    alt="moto"></li>
+                <li><div id="ubera">Uber Rentals</div><div><p>Book Rentals to save time with ine car and drive for your multi-stops trip</p></div></li>
+            </ul>
+        </a>
+        </div><br><br>
+
+        <div><a href="">
+            <ul class="hoop5">
+                <li><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914597/assets/f7/7f583f-447a-4cf7-8da6-6ad254f0a66b/original/Intercity-150X150p4x.png"
+                    alt="moto"></li>
+                <li><div id="ubera">Uber Intercity</div><div><p>Book Intercity to head outstation anytime in convenient and affordable cars</p></div></li>
+            </ul>
+        </a>
+        </div>
+    </div>
+
+    <div class="hol"><br><br><br><br>
+        <div><p class="ho2">Uber</p></div><br><br><br>
+
+        <div class="ho3"><ul class="ho4">
+                 <li>
+                     <ul>
+                         <li id="boc">Company</li><br>
+                         <li>About us</li><br>
+                         <li>Our offerings</li><br>
+                         <li>Newsroom</li><br>
+                         <li>Investors</li>
+                     </ul>
+                 </li>
+
+                 <li>
+                     <ul>
+                         <li id="bop">Products</li><br>
+                         <li>Ride</li><br>
+                         <li>Drive</li><br>
+                         <li>Deliver</li><br>
+                         <li>Eat</li>
+                     </ul>
+                 </li>
+             </ul>
+        </div><br><br><br>     
+
+        <div class="ho3"><ul class="ho4">
+                 <li>
+                     <ul>
+                         <li id="boc">Global citizenship</li><br>
+                         <li>Safety</li><br>
+                         <li>Diversity and inclusion</li><br>
+                         <li>Sustainability</li>
+                     </ul>
+                 </li>
+
+                 <li>
+                     <ul>
+                         <li id="bop">Travel</li><br>
+                         <li>Airports</li><br>
+                         <li>Cities</li><br>
+                         <li>States</li>
+                     </ul>
+                 </li>
+             </ul>
+        </div><br><br>
+        
+        <ul>
+            <li><a href=""><img src="https://img.freepik.com/premium-vector/google-play-logo_578229-280.jpg?size=626&ext=jpg&ga=GA1.1.1792764313.1682398099&semt=ais" alt="Facebook" width="30px" id="imgg"></a></li>
+            <li><a href=""><img src="https://developer.apple.com/news/images/og/asc-og-twitter.png" width="60px" alt=""></a></li>
+        </ul>
+
+        <div class="bottom">
+            <ul>
+                <li class="bo">Privacy</li>
+                <li class="bo">Accessibility</li>
+                <li class="bo">Terms</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

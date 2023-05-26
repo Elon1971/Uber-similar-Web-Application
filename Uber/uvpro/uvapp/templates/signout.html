@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="sub">
+        <h1 id="sub">Uber</h1>
+        <div class="btn">
+            <button type="button" id="li">LogIn</button>
+            <button type="button" id="ssu">SignUp</button>
+        </div>
+    </div>
+
+    <div class="rwu">
+        <div class="pr">
+            <div>
+                <form action="/so/" method="post">
+                    {% csrf_token %}
+                    <button type="submit" id="re">LogIn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

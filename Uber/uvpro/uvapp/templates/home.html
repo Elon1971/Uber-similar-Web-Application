@@ -1,0 +1,37 @@
+{% extends 'hoindex.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% block content %}
+    <div><h1 class="hoh1">Request a ride now</h1></div>
+
+    <div>
+        <input type="text" name="text" id="hotext" placeholder="Enter Pickup Location">
+        <input type="text" name="text" id="hotext" placeholder="Enter Destination">
+    </div><br><br><br>
+
+    
+    {% comment %} <div class="searchbox">
+      <input type="text" id="picklo" name="firstname" placeholder="Enter Pickup Location">
+      <input type="text" id="deslo" name="lastname" placeholder="Enter Destination">
+     </div><br><br> {% endcomment %}
+
+
+    <div>
+        <div class="divho"><a href=""><button id="hobr">Request now</button></a></div>
+        <div class="divho"><a href=""><button id="hobs">Schedule for later</button></a></div>
+    </div><br><br>
+
+    <div id="img"><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1007,h_566/v1653688635/assets/d1/1ffc67-97f4-469c-85ac-e18d1da3ae95/original/DotCom_Update_Rider_bg_med2x.jpg"
+         alt=""></div>
+
+         
+    {% endblock %}
+</body>
+</html>
